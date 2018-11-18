@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+table, td, tr{
+	border: 0.5px solid black;
+	border-collapse: collapse;
+	width: 80%;
+	text-align: center;
+	table-layout: fixed;
+	height: 55px;
+	margin-left: 7%;
+}
+h1, h2{
+	margin-left: 7%;
+	text-align: center;
+}

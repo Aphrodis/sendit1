@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orders made by different clients</title>	
+</head>
+<link rel="stylesheet" type="text/css" href="../CSS/ordersmade.css">
+<body>
+	<div class="orders">
+		<div id="adminDelivary">
+			<h1>Orders made by all the clients</h1>
+			<table>
+				<tr>
+					<td><b>Owner</b></td>
+					<td><b>Pickup Location</b></td>
+					<td><b>Destination</b></td>
+					<td><b>Weight</b></td>
+					<td><b>Price</b></td>
+					<td><b>Present Location</b></td>
+					<td><b>Status</b></td>
+				</tr>
+				<tr>
+					<td>Aphrodice</td>
+					<td>Ghana</td>	
+					<td>Zimbabwe</td>		
+					<td>13</td>
+					<td>6800</td>
+					<td>
+						<select name="plocation" id="plocation">
+							<option value="Rwanda">Rwanda</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Uganda">Uganda</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Algeria">Algeria</option>
+							<option value="Angola">Angola</option>
+							<option value="Benin">Benin</option>
+							<option value="Botswana">Botswana</option>
+							<option value="Burkina Faso">Burkina Faso</option>
+							<option value="Burundi">Burundi</option>
+							<option value="Cape Verde">Cape Verde</option>
+							<option value="Cameroon">Cameroon</option>
+							<option value="Chad">Chad</option>
+							<option value="Comoros">Comoros</option>
+							<option value="DRC">DRC</option>
+							<option value="Congo Brazaville">Congo Brazaville</option>
+							<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+							<option value="Djibouti">Djibouti</option>
+							<option value="Egypt">Egypt</option>
+							<option value="Equatorial Guinea">Equatorial Guinea</option>
+							<option value="Eritrea">Eritrea</option>
+							<option value="Swaziland">Swaziland</option>
+							<option value="Ethiopia">Ethiopia</option>
+							<option value="Gabon">Gabon</option>
+							<option value="Gambia">Gambia</option>
+							<option value="Ghana">Ghana</option>
+							<option value="Guinea">Guinea</option>
+							<option value="Guinea-Bissau">Guinea-Bissau</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Lesotho">Lesotho</option>
+							<option value="Liberia">Liberia</option>
+							<option value="Libya">Libya</option>
+							<option value="Madagascar">Madagascar</option>
+							<option value="Malawi">Malawi</option>
+							<option value="Mali">Mali</option>
+							<option value="Mauritania">Mauritania</option>
+							<option value="Mauritius">Mauritius</option>
+							<option value="Morocco">Morocco</option>
+							<option value="Mozambique">Mozambique</option>
+							<option value="Namibia">Namibia</option>
+							<option value="Niger">Niger</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Senegal">Senegal</option>
+							<option value="Sierra Leone">Sierra Leone</option>
+							<option value="South Africa">South Africa</option>
+							<option value="South Sudan">South Sudan</option>
+							<option value="Sudan">Sudan</option>
+							<option value="Togo">Togo</option>
+							<option value="Tunisia">Tunisia</option>
+							<option value="Zambia">Zambia</option>
+							<option value="Zimbabwe">Zimbabwe</option>
+						</select> 
+					</td>
+					<td>
+						<select name="status" id="status">
+							<option value="Not delivered">Not delivered</option>
+							<option value="In transit">In transit</option>
+							<option value="Delivered">Delivered</option>
+						</select> 
+					</td>
+				</tr>
+				<tr>			
+					<td>Dunia</td>
+					<td>Rwanda</td>	
+					<td>Ethiopia</td>		
+					<td>3</td>
+					<td>600</td>
+					<td>
+						<select name="plocation" id="plocation">
+							<option value="Rwanda">Rwanda</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Uganda">Uganda</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Algeria">Algeria</option>
+							<option value="Angola">Angola</option>
+							<option value="Benin">Benin</option>
+							<option value="Botswana">Botswana</option>
+							<option value="Burkina Faso">Burkina Faso</option>
+							<option value="Burundi">Burundi</option>
+							<option value="Cape Verde">Cape Verde</option>
+							<option value="Cameroon">Cameroon</option>
+							<option value="Chad">Chad</option>
+							<option value="Comoros">Comoros</option>
+							<option value="DRC">DRC</option>
+							<option value="Congo Brazaville">Congo Brazaville</option>
+							<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+							<option value="Djibouti">Djibouti</option>
+							<option value="Egypt">Egypt</option>
+							<option value="Equatorial Guinea">Equatorial Guinea</option>
+							<option value="Eritrea">Eritrea</option>
+							<option value="Swaziland">Swaziland</option>
+							<option value="Ethiopia">Ethiopia</option>
+							<option value="Gabon">Gabon</option>
+							<option value="Gambia">Gambia</option>
+							<option value="Ghana">Ghana</option>
+							<option value="Guinea">Guinea</option>
+							<option value="Guinea-Bissau">Guinea-Bissau</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Lesotho">Lesotho</option>
+							<option value="Liberia">Liberia</option>
+							<option value="Libya">Libya</option>
+							<option value="Madagascar">Madagascar</option>
+							<option value="Malawi">Malawi</option>
+							<option value="Mali">Mali</option>
+							<option value="Mauritania">Mauritania</option>
+							<option value="Mauritius">Mauritius</option>
+							<option value="Morocco">Morocco</option>
+							<option value="Mozambique">Mozambique</option>
+							<option value="Namibia">Namibia</option>
+							<option value="Niger">Niger</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Senegal">Senegal</option>
+							<option value="Sierra Leone">Sierra Leone</option>
+							<option value="South Africa">South Africa</option>
+							<option value="South Sudan">South Sudan</option>
+							<option value="Sudan">Sudan</option>
+							<option value="Togo">Togo</option>
+							<option value="Tunisia">Tunisia</option>
+							<option value="Zambia">Zambia</option>
+							<option value="Zimbabwe">Zimbabwe</option>
+						</select> 
+					</td>
+					<td>
+						<select name="status" id="status">
+							<option value="Not delivered">Not delivered</option>
+							<option value="In transit">In transit</option>
+							<option value="Delivered">Delivered</option>
+						</select> 
+					</td>
+				</tr>
+				<tr>			
+					<td>Honorine</td>
+					<td>Somalia</td>	
+					<td>Uganda</td>		
+					<td>10</td>
+					<td>520</td>
+					<td>
+						<select name="plocation" id="plocation">
+							<option value="Rwanda">Rwanda</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Uganda">Uganda</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Algeria">Algeria</option>
+							<option value="Angola">Angola</option>
+							<option value="Benin">Benin</option>
+							<option value="Botswana">Botswana</option>
+							<option value="Burkina Faso">Burkina Faso</option>
+							<option value="Burundi">Burundi</option>
+							<option value="Cape Verde">Cape Verde</option>
+							<option value="Cameroon">Cameroon</option>
+							<option value="Chad">Chad</option>
+							<option value="Comoros">Comoros</option>
+							<option value="DRC">DRC</option>
+							<option value="Congo Brazaville">Congo Brazaville</option>
+							<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+							<option value="Djibouti">Djibouti</option>
+							<option value="Egypt">Egypt</option>
+							<option value="Equatorial Guinea">Equatorial Guinea</option>
+							<option value="Eritrea">Eritrea</option>
+							<option value="Swaziland">Swaziland</option>
+							<option value="Ethiopia">Ethiopia</option>
+							<option value="Gabon">Gabon</option>
+							<option value="Gambia">Gambia</option>
+							<option value="Ghana">Ghana</option>
+							<option value="Guinea">Guinea</option>
+							<option value="Guinea-Bissau">Guinea-Bissau</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Lesotho">Lesotho</option>
+							<option value="Liberia">Liberia</option>
+							<option value="Libya">Libya</option>
+							<option value="Madagascar">Madagascar</option>
+							<option value="Malawi">Malawi</option>
+							<option value="Mali">Mali</option>
+							<option value="Mauritania">Mauritania</option>
+							<option value="Mauritius">Mauritius</option>
+							<option value="Morocco">Morocco</option>
+							<option value="Mozambique">Mozambique</option>
+							<option value="Namibia">Namibia</option>
+							<option value="Niger">Niger</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Senegal">Senegal</option>
+							<option value="Sierra Leone">Sierra Leone</option>
+							<option value="South Africa">South Africa</option>
+							<option value="South Sudan">South Sudan</option>
+							<option value="Sudan">Sudan</option>
+							<option value="Togo">Togo</option>
+							<option value="Tunisia">Tunisia</option>
+							<option value="Zambia">Zambia</option>
+							<option value="Zimbabwe">Zimbabwe</option>
+						</select> 
+					</td>
+					<td>
+						<select name="status" id="status">
+							<option value="Not delivered">Not delivered</option>
+							<option value="In transit">In transit</option>
+							<option value="Delivered">Delivered</option>
+						</select> 
+					</td>
+				</tr>
+				<tr>			
+					<td>Eric</td>
+					<td>Rwanda</td>
+					<td>Kenya</td>		
+					<td>30</td>
+					<td>1000</td>
+					<td>
+						<select name="plocation" id="plocation">
+							<option value="Rwanda">Rwanda</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Uganda">Uganda</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Algeria">Algeria</option>
+							<option value="Angola">Angola</option>
+							<option value="Benin">Benin</option>
+							<option value="Botswana">Botswana</option>
+							<option value="Burkina Faso">Burkina Faso</option>
+							<option value="Burundi">Burundi</option>
+							<option value="Cape Verde">Cape Verde</option>
+							<option value="Cameroon">Cameroon</option>
+							<option value="Chad">Chad</option>
+							<option value="Comoros">Comoros</option>
+							<option value="DRC">DRC</option>
+							<option value="Congo Brazaville">Congo Brazaville</option>
+							<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+							<option value="Djibouti">Djibouti</option>
+							<option value="Egypt">Egypt</option>
+							<option value="Equatorial Guinea">Equatorial Guinea</option>
+							<option value="Eritrea">Eritrea</option>
+							<option value="Swaziland">Swaziland</option>
+							<option value="Ethiopia">Ethiopia</option>
+							<option value="Gabon">Gabon</option>
+							<option value="Gambia">Gambia</option>
+							<option value="Ghana">Ghana</option>
+							<option value="Guinea">Guinea</option>
+							<option value="Guinea-Bissau">Guinea-Bissau</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Lesotho">Lesotho</option>
+							<option value="Liberia">Liberia</option>
+							<option value="Libya">Libya</option>
+							<option value="Madagascar">Madagascar</option>
+							<option value="Malawi">Malawi</option>
+							<option value="Mali">Mali</option>
+							<option value="Mauritania">Mauritania</option>
+							<option value="Mauritius">Mauritius</option>
+							<option value="Morocco">Morocco</option>
+							<option value="Mozambique">Mozambique</option>
+							<option value="Namibia">Namibia</option>
+							<option value="Niger">Niger</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Senegal">Senegal</option>
+							<option value="Sierra Leone">Sierra Leone</option>
+							<option value="South Africa">South Africa</option>
+							<option value="South Sudan">South Sudan</option>
+							<option value="Sudan">Sudan</option>
+							<option value="Togo">Togo</option>
+							<option value="Tunisia">Tunisia</option>
+							<option value="Zambia">Zambia</option>
+							<option value="Zimbabwe">Zimbabwe</option>
+						</select> 
+					</td>
+					<td>
+						<select name="status" id="status">
+							<option value="Not delivered">Not delivered</option>
+							<option value="In transit">In transit</option>
+							<option value="Delivered">Delivered</option>
+						</select> 
+					</td>
+				</tr>
+				<tr>		
+					<td>Jesca</td>
+					<td>Burundi</td>
+					<td>Nigeria</td>		
+					<td>50</td>
+					<td>800</td>
+					<td>
+						<select name="plocation" id="plocation">
+							<option value="Rwanda">Rwanda</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Uganda">Uganda</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Algeria">Algeria</option>
+							<option value="Angola">Angola</option>
+							<option value="Benin">Benin</option>
+							<option value="Botswana">Botswana</option>
+							<option value="Burkina Faso">Burkina Faso</option>
+							<option value="Burundi">Burundi</option>
+							<option value="Cape Verde">Cape Verde</option>
+							<option value="Cameroon">Cameroon</option>
+							<option value="Chad">Chad</option>
+							<option value="Comoros">Comoros</option>
+							<option value="DRC">DRC</option>
+							<option value="Congo Brazaville">Congo Brazaville</option>
+							<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+							<option value="Djibouti">Djibouti</option>
+							<option value="Egypt">Egypt</option>
+							<option value="Equatorial Guinea">Equatorial Guinea</option>
+							<option value="Eritrea">Eritrea</option>
+							<option value="Swaziland">Swaziland</option>
+							<option value="Ethiopia">Ethiopia</option>
+							<option value="Gabon">Gabon</option>
+							<option value="Gambia">Gambia</option>
+							<option value="Ghana">Ghana</option>
+							<option value="Guinea">Guinea</option>
+							<option value="Guinea-Bissau">Guinea-Bissau</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Lesotho">Lesotho</option>
+							<option value="Liberia">Liberia</option>
+							<option value="Libya">Libya</option>
+							<option value="Madagascar">Madagascar</option>
+							<option value="Malawi">Malawi</option>
+							<option value="Mali">Mali</option>
+							<option value="Mauritania">Mauritania</option>
+							<option value="Mauritius">Mauritius</option>
+							<option value="Morocco">Morocco</option>
+							<option value="Mozambique">Mozambique</option>
+							<option value="Namibia">Namibia</option>
+							<option value="Niger">Niger</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Senegal">Senegal</option>
+							<option value="Sierra Leone">Sierra Leone</option>
+							<option value="South Africa">South Africa</option>
+							<option value="South Sudan">South Sudan</option>
+							<option value="Sudan">Sudan</option>
+							<option value="Togo">Togo</option>
+							<option value="Tunisia">Tunisia</option>
+							<option value="Zambia">Zambia</option>
+							<option value="Zimbabwe">Zimbabwe</option>
+						</select> 
+					</td>
+					<td>
+						<select name="status" id="status">
+							<option value="Not delivered">Not delivered</option>
+							<option value="In transit">In transit</option>
+							<option value="Delivered">Delivered</option>
+						</select> 
+					</td>
+				</tr>
+				<tr>	
+					<td>Alex</td>
+					<td>Nigeria</td>
+					<td>Rwanda</td>		
+					<td>10</td>
+					<td>300</td>
+					<td>
+						<select name="plocation" id="plocation">
+							<option value="Rwanda">Rwanda</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Uganda">Uganda</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Algeria">Algeria</option>
+							<option value="Angola">Angola</option>
+							<option value="Benin">Benin</option>
+							<option value="Botswana">Botswana</option>
+							<option value="Burkina Faso">Burkina Faso</option>
+							<option value="Burundi">Burundi</option>
+							<option value="Cape Verde">Cape Verde</option>
+							<option value="Cameroon">Cameroon</option>
+							<option value="Chad">Chad</option>
+							<option value="Comoros">Comoros</option>
+							<option value="DRC">DRC</option>
+							<option value="Congo Brazaville">Congo Brazaville</option>
+							<option value="Cote d'Ivoire">Cote d'Ivoire</option>
+							<option value="Djibouti">Djibouti</option>
+							<option value="Egypt">Egypt</option>
+							<option value="Equatorial Guinea">Equatorial Guinea</option>
+							<option value="Eritrea">Eritrea</option>
+							<option value="Swaziland">Swaziland</option>
+							<option value="Ethiopia">Ethiopia</option>
+							<option value="Gabon">Gabon</option>
+							<option value="Gambia">Gambia</option>
+							<option value="Ghana">Ghana</option>
+							<option value="Guinea">Guinea</option>
+							<option value="Guinea-Bissau">Guinea-Bissau</option>
+							<option value="Kenya">Kenya</option>
+							<option value="Lesotho">Lesotho</option>
+							<option value="Liberia">Liberia</option>
+							<option value="Libya">Libya</option>
+							<option value="Madagascar">Madagascar</option>
+							<option value="Malawi">Malawi</option>
+							<option value="Mali">Mali</option>
+							<option value="Mauritania">Mauritania</option>
+							<option value="Mauritius">Mauritius</option>
+							<option value="Morocco">Morocco</option>
+							<option value="Mozambique">Mozambique</option>
+							<option value="Namibia">Namibia</option>
+							<option value="Niger">Niger</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Senegal">Senegal</option>
+							<option value="Sierra Leone">Sierra Leone</option>
+							<option value="South Africa">South Africa</option>
+							<option value="South Sudan">South Sudan</option>
+							<option value="Sudan">Sudan</option>
+							<option value="Togo">Togo</option>
+							<option value="Tunisia">Tunisia</option>
+							<option value="Zambia">Zambia</option>
+							<option value="Zimbabwe">Zimbabwe</option>
+						</select> 
+					</td>
+					<td>
+						<select name="status" id="status">
+							<option value="Not delivered">Not delivered</option>
+							<option value="In transit">In transit</option>
+							<option value="Delivered">Delivered</option>
+						</select> 
+					</td>			
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
